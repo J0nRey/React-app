@@ -1,0 +1,10 @@
+$main-color: peru;
+$secundary-color: slategray;
+
+$font-weigths: ("regular": 400, "medium": 500, "bold": 700);
+
+@each $name, $weigth in $font-weigths{
+    .font-weigth-#{$name}{
+        font-weight: $weigth;
+    }
+}
